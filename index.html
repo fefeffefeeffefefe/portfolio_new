@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width	, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Portfolio</title>
+
+    <style>
+        @keyframes glow {
+          from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+          }
+          
+          to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+          }
+        }
+        </style>
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1 class="title">Abel Teenstra's portfolio</h1>
+    </header>
+
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <span onclick="openNav()" class="navOpen">&#9776; MENU</span>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <main class="content">
+    
+        <section class="sectionAboutMe">
+
+            <section class="image">
+                <img src="./img/abelfoto.jpg" alt="Abel">
+            </section> 
+
+            <div class="column1">
+                <p class="portfolioHeader"><strong>Wie ik ben</strong></p>
+                <p class="portfolioText">Hallo, welkom op de portfolio van Abel Teenstra. Ik ben een 18 jarige student aan de hogeschool Rotterdam. Ik doe de opleiding creative media & game technologys, ik zit hier in het eerste jaar. Voor deze opleiding heb ik havo afgerond. Wat ik leuk vind om in mijn vrije tijd te doen zijn videogames, uitgaan, sporten & en voetbal kijken.
+                </p>
+            </div>    
+
+        </section>
+    
+        <section class="sectionProgrammeren">
+
+            <section class="image">
+                <img src="./img/Python-Symbol.png" alt="python-logo">
+            </section> 
+
+            <div class="column1">
+                <p class="portfolioHeader"><strong>Programmeren</strong></p>
+                <p class="portfolioText">Voordat ik de opleiding begon had ik al een beetje leren Programmeren in python, hierin had ik een text-based rpg gemaakt. Verder heb ik geprobeerd om een game te maken in unity, zonder succes, want op het moment was het mij nog allemaal te moeilijk. Na de eerste periode van de opleiding heb ik de basis geleerd van html, css & javascript.
+                </p>
+            </div>    
+
+        </section>
+
+        <footer>
+            <nav id="footernav">
+                <a href="#"> Instagram</a>
+                <a href="#"> Twitter</a>
+                <a href="#"> Linkedin</a>
+            </nav>
+        </footer>
+    </main>
+
+</body>
+</html>

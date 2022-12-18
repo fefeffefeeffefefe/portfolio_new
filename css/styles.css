@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;600&display=swap');
+
+.body {
+    background-image: url(../img/wallpaperflare-cropped.jpg);
+    margin: 0px;
+    font-family: 'Roboto Slab', serif;
+    background-size: 100% 100%;
+}
+
+.header {
+    background-image: url("../img/background_dark.png");
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    margin: 0px;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navOpen {
+    color: rgb(148, 120, 120);
+    font-size:30px;
+    cursor:pointer;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(63, 0, 0, 0.815);
+}
+
+.portfolioText {
+    margin: 5px 0 5px 0;
+    padding-left: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.sectionAboutMe, .sectionWork {
+    width: 50vw;
+    margin: 0 auto;
+    background-color: rgb(63, 0, 0, 0.826);
+    overflow: hidden;
+    display: flex;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.sectionProgrammeren {
+    width: 50vw;
+    margin: 0 auto;
+    background-color: rgba(63, 0, 0, 0.826);
+    overflow: hidden;
+    display: flex;
+    padding: 1rem;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.image img {
+    width: 100%;
+    transition: transform .2s;
+}
+
+form input[type = text], [type = email] {
+    font-size: 1em;
+    padding: 10px;
+}
+
+.formField {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+input:invalid {
+    border: 0.5px solid red;
+}
+
+input:valid {
+    border: 0.5px solid green;
+} 
+
+.title-wrapper {
+    width: 50vw;
+    margin: 0 auto;
+} 
+
+.portfolioHeader {
+    padding-left: 1rem;
+    font-size: 1.2em;
+    margin: 5px 0 5px 0;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: transparent;
+    margin-top:3%;
+    margin-bottom: 0;
+    padding-bottom:3%;
+    text-align: center;
+}
+
+footer a {
+    padding: 10px;
+    background-color: rgb(63, 0, 0);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: rgb(117, 16, 73);
+}
+
+#footernav {
+    padding-top: 40px;
+}
+
+li {
+    color: white;
+}
+
+.contactForm {
+    width: 35vw;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    padding: 1rem;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.title-contact {
+    text-align: center;
+}
+
+.formField input {
+    background-color: lightgray;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+.title-contact {
+    color: white;
+    font-size: 2em;
+}
+
+.image :hover {
+    transform: scale(1.5); 
+}
+
+.bedanktText {
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .sectionProgrammeren {
+        flex-direction: column;
+        width: 75%;
+    }
+    .sectionAboutMe {
+        flex-direction: column;
+        width: 75%;
+    }
+    .image img {
+        height: 100%;
+        width: 100%;
+    }
+    .contactForm {
+        width: 90%;
+    }
+} 
